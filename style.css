@@ -1,0 +1,141 @@
+body {
+    font-family:fantasy; 
+    text-shadow: #ff6666;
+    background-color: snow;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: honeydew;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    border-color: crimson;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a50034;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-left: 5px solid crimson;
+    border-radius: 5px;
+    position: relative;
+}
+
+ul li.completed {
+    text-decoration: line-through;
+    background: lavender;
+    border-left: 5px solid #28a745;
+}
+
+ul li button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+ul li button.complete {
+    right: 150px;
+    color: #28a745;
+}
+
+ul li button.edit {
+    right: 80px;
+    color: #ffc107;
+}
+
+ul li button.delete {
+    right: 10px;
+    color: #ff6666;
+}
+
+ul li button.complete:hover {
+    color: #218838;
+}
+
+ul li button.edit:hover {
+    color: #e0a800;
+}
+
+ul li button.delete:hover {
+    color: #ff3333;
+}
+
+#clear-tasks {
+    background-color: #dc3545;
+    margin-top: 20px;
+}
+
+#clear-tasks:hover {
+    background-color: #c82333;
+}
+
+#search-input, #filter-tasks {
+    margin-top: 10px;
+    padding: 10px;
+    width: calc(50% - 15px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-input:focus, #filter-tasks:focus {
+    border-color: crimson;
+    outline: none;
+}
+
+.new-task {
+    animation: highlight 0.5s ease;
+}
+
+@keyframes highlight {
+    from { background-color: lightyellow; }
+    to { background-color: white; }
+}
